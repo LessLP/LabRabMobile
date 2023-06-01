@@ -20,7 +20,7 @@ __Отчет
 Поставим лимит на память и процессор `docker run -d -p 8083:80 -m 50m --cpus 1 --name ng_limit nginx`
 <img src="img/img_lub_3/CPUizm.png">
 
-####Практические задания:
+####Практические задания:<p>
 Останавливаем все контейнеры `docker stop $(docker ps -a -q)`, кроме _Portainer_, удаляем их `docker container rm $(docker ps -a -q)`, удаляем все образы `docker image prune -a`, диски `docker volume rm $(docker volume ls -q)` и неиспользуемые сети. Удалить все ненужное `docker system prune –a`. Устанавливаем _docker registry_(`docker run -d --name registry-ui -p 8080:80 jc21/registry-ui`), _Shipyard_. Я нашел в интернете инструкцию по ручной установке _Shipyard_
 
 ```
